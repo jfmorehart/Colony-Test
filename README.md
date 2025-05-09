@@ -8,7 +8,8 @@ GameManager takes some UI input, and starts the game, which mainly involves the 
 The [Map](Assets/Scripts/Generative/Map.cs) is resposible for everything level-related.
 From there, the map spawns the [UnitFactory](Assets/Scripts/Generative/UnitFactory.cs), and the [Grid](Assets/Scripts/Generative/Grid.cs).
 
-The unit factory is swappable, and allows decoupling between each level and the [unit](Assets/Scripts/Units/Unit) prefabs and [data](Assets/Scripts/Objects/InsectData.cs). 
+The unit factory is swappable, and allows decoupling between each level and the [unit](Assets/Scripts/Units/Unit.cs) prefabs and [data](Assets/Scripts/Objects/InsectData.cs). 
+It also facilitates the combination of those two, allowing for data-driven design for any unit subclass. 
 
 It's an imperfect system, but it is intuitive, readable, and quite scalable. 
 
